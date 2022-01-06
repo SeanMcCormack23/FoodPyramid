@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" style="--trap-height: 70px;">
+<html lang="en" style="--trap-height: 100px;">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,39 @@
   <link rel="stylesheet" href="styles.css">
   <title>Food Pyramid v2</title>
 </head>
+
 <body>
   <h2>Food Pyramid v2</h2>
   <div class="main-container">
-    <div id="triangle" class="trapezoid"></div>
-    <div class="trapezoid sweets"></div>
+    <div id="triangle"></div>
+    <div id="sweets" class="trapezoid sweets">
+      <span class="circle" onclick="decrease1();">-</span>
+      <span class="circle">0</span>
+    </div>
     <div class="trapezoid fats">
-      <span class="circle" onclick="decrease();">A</span>
+      <span class="circle" onclick="decrease2();">-</span>
+      <span class="circle">0</span>
     </div>
     <div class="trapezoid meats">
-      <span class="circle">#</span>
+      <span class="circle" onclick="decrease();">-</span>
+      <span class="circle">0</span>
+    </div>
+    <div class="trapezoid dairy">
+      <span class="circle" onclick="decrease();">-</span>
+      <span class="circle">0</span>
+    </div>
+    <div class="trapezoid grains">
+      <span class="circle" onclick="decrease();">-</span>
+      <span class="circle">0</span>
+      <span class="circle" onclick="decrease();">+</span>
+    </div>
+    <div class="trapezoid veg">
+      <span class="circle" onclick="decrease();">-</span>
+      <span class="circle">0</span>
+      <span class="circle" onclick="decrease();">+</span>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
